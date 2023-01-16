@@ -29,7 +29,7 @@ public class Game {
 
         final JFrame frame = new JFrame();
         frame.getContentPane().add(canvas);
-        frame.setTitle("Ex 2 - Hierarchical Cubes");
+        frame.setTitle("Shoot dat cube");
         frame.pack();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);

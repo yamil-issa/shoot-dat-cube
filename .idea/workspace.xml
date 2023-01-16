@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89806939-9caf-44a4-81e6-7545d60d9239" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/img/sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Canva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/lib/gluegen-rt-natives-windows-amd64.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/lib/gluegen-rt.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/lib/jogl-all-mobile-natives-windows-amd64.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/lib/jogl-all.jar" afterDir="false" />
+    <list default="true" id="89806939-9caf-44a4-81e6-7545d60d9239" name="Changes" comment="enemy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +64,14 @@
       <recent name="D:\shoot-dat-cube\src\main\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Game">
+  <component name="RunManager" selected="Application.HandlingEvents">
+    <configuration name="Background3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Background3" />
+      <module name="shoot-dat-cube" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Canva" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Canva" />
       <module name="shoot-dat-cube" />
@@ -93,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrollingCubes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ScrollingCubes" />
+    <configuration name="HandlingEvents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HandlingEvents" />
       <module name="shoot-dat-cube" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,20 +100,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleMove" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TriangleMove" />
-      <module name="shoot-dat-cube" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HandlingEvents" />
+        <item itemvalue="Application.Background3" />
         <item itemvalue="Application.Game" />
         <item itemvalue="Application.Canva" />
         <item itemvalue="Application.Triangle" />
-        <item itemvalue="Application.ScrollingCubes" />
-        <item itemvalue="Application.TriangleMove" />
       </list>
     </recent_temporary>
   </component>
@@ -133,11 +119,35 @@
       <option name="presentableId" value="Default" />
       <updated>1672772873705</updated>
       <workItem from="1672772874990" duration="26628000" />
-      <workItem from="1672994617386" duration="4408000" />
+      <workItem from="1672994617386" duration="7549000" />
+      <workItem from="1673878277065" duration="1705000" />
     </task>
+    <task id="LOCAL-00001" summary="enemy">
+      <created>1673354933753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673354933753</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="enemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="enemy" />
   </component>
 </project>
