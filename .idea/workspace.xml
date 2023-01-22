@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="89806939-9caf-44a4-81e6-7545d60d9239" name="Changes" comment="enemy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Canva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Canva.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +41,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/shoot-dat-cube/src/main/lib/jogl-all.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/shoot-dat-cube/src/main/lib/jogl-all.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\shoot-dat-cube\src\main\lib" />
@@ -64,7 +66,7 @@
       <recent name="D:\shoot-dat-cube\src\main\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HandlingEvents">
+  <component name="RunManager" selected="Application.Game">
     <configuration name="Background3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Background3" />
       <module name="shoot-dat-cube" />
@@ -93,8 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Triangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Triangle" />
+    <configuration name="SpaceInvaders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpaceInvaders" />
       <module name="shoot-dat-cube" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.SpaceInvaders" />
+        <item itemvalue="Application.Canva" />
         <item itemvalue="Application.HandlingEvents" />
         <item itemvalue="Application.Background3" />
-        <item itemvalue="Application.Game" />
-        <item itemvalue="Application.Canva" />
-        <item itemvalue="Application.Triangle" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +122,8 @@
       <updated>1672772873705</updated>
       <workItem from="1672772874990" duration="26628000" />
       <workItem from="1672994617386" duration="7549000" />
-      <workItem from="1673878277065" duration="1705000" />
+      <workItem from="1673878277065" duration="3450000" />
+      <workItem from="1674386968585" duration="11360000" />
     </task>
     <task id="LOCAL-00001" summary="enemy">
       <created>1673354933753</created>
@@ -129,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673354933753</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="enemy">
+      <created>1673880073370</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673880073370</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,13 +1,17 @@
+import com.jogamp.opengl.GL;
 import com.jogamp.opengl.GL2;
 import com.jogamp.opengl.GLAutoDrawable;
 import com.jogamp.opengl.GLEventListener;
 import com.jogamp.opengl.awt.GLCanvas;
 import com.jogamp.opengl.glu.GLU;
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.sql.Array;
 import java.util.ArrayList;
 
-public class Canva extends GLCanvas implements GLEventListener {
+public class Canva extends GLCanvas implements GLEventListener, KeyListener {
+    private float xPos = 0.0f;
     private Player player; // instance of the Player class
     public ArrayList<Enemy> enemies = new ArrayList<Enemy>() ;
     private float r_speed1;
@@ -16,6 +20,8 @@ public class Canva extends GLCanvas implements GLEventListener {
 
     public Canva() {
         this.addGLEventListener(this);
+        player = new Player();
+        addKeyListener(this);
 
     }
 
@@ -62,7 +68,14 @@ public class Canva extends GLCanvas implements GLEventListener {
                 gl.glPopMatrix();
 
             }
+
         }
+
+        gl.glLoadIdentity();
+        gl.glTranslatef(xPos, -0.7f, -2);
+        gl.glPushMatrix();
+        player.drawPlayer(gl);
+        gl.glPopMatrix();
 
 
 
@@ -98,4 +111,24 @@ public class Canva extends GLCanvas implements GLEventListener {
 
     }
 
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent ke) {
+        int keyCode = ke.getKeyCode();
+        if (keyCode == KeyEvent.VK_LEFT) {
+            xPos -= 0.1;
+        } else if (keyCode == KeyEvent.VK_RIGHT) {
+            xPos += 0.1;
+        }
+
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+
+    }
 }
