@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class Canva extends GLCanvas implements GLEventListener, KeyListener {
     private float xPos = 0.0f;
+    private float yPos = -0.7f;
     private Player player; // instance of the Player class
     public ArrayList<Enemy> enemies = new ArrayList<Enemy>() ;
     private float r_speed1;
@@ -24,6 +25,18 @@ public class Canva extends GLCanvas implements GLEventListener, KeyListener {
         addKeyListener(this);
 
     }
+
+    ArrayList<Bullet> bullets = new ArrayList<Bullet>();
+
+    public void shoot() {
+        float x = xPos;
+        float y = yPos;
+        float width = 0.1f;
+        float height = 0.1f;
+        Bullet bullet = new Bullet(x/2, y, width/2, height);
+        bullets.add(bullet);
+    }
+
 
     @Override
     public void init(GLAutoDrawable glAutoDrawable) {
@@ -53,7 +66,6 @@ public class Canva extends GLCanvas implements GLEventListener, KeyListener {
         gl.glLoadIdentity();
 
 
-
         // loop through the two lines of cubes
         for (int i = 0; i < 3; i++) {
             // loop through the six cubes in each line
@@ -64,7 +76,6 @@ public class Canva extends GLCanvas implements GLEventListener, KeyListener {
                 gl.glRotatef(r_speed1, 0.0f, 1.0f, 0.0f);
                 gl.glScaled(1.0f, 1.0f, 1.0f);
                 enemy.drawCube(gl);
-                this.enemies.add(enemy);
                 gl.glPopMatrix();
 
             }
@@ -72,12 +83,10 @@ public class Canva extends GLCanvas implements GLEventListener, KeyListener {
         }
 
         gl.glLoadIdentity();
-        gl.glTranslatef(xPos, -0.7f, -2);
+        gl.glTranslatef(xPos, yPos, -2);
         gl.glPushMatrix();
         player.drawPlayer(gl);
         gl.glPopMatrix();
-
-
 
 
         gl.glFlush();
@@ -90,6 +99,19 @@ public class Canva extends GLCanvas implements GLEventListener, KeyListener {
         if (x_position > 19.0f || x_position < -19.0f) {
             direction = -direction;
         }
+
+        for (int i = 0; i < bullets.size(); i++) {
+            Bullet bullet = bullets.get(i);
+            gl.glPushMatrix();
+            gl.glTranslatef(bullet.getX(), bullet.getX(), 0.0f);
+            bullet.draw(gl);
+            gl.glPopMatrix();
+            bullet.setY(0.1f);
+            if(bullet.getY() > 480) // if the bullet goes off the screen
+                bullets.remove(i);
+
+        }
+
     }
 
 
@@ -123,6 +145,8 @@ public class Canva extends GLCanvas implements GLEventListener, KeyListener {
             xPos -= 0.1;
         } else if (keyCode == KeyEvent.VK_RIGHT) {
             xPos += 0.1;
+        } else if (keyCode == KeyEvent.VK_SPACE) {
+            shoot();
         }
 
     }

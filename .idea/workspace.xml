@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89806939-9caf-44a4-81e6-7545d60d9239" name="Changes" comment="enemy">
+    <list default="true" id="89806939-9caf-44a4-81e6-7545d60d9239" name="Changes" comment="add player">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Canva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Canva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +123,7 @@
       <workItem from="1672772874990" duration="26628000" />
       <workItem from="1672994617386" duration="7549000" />
       <workItem from="1673878277065" duration="3450000" />
-      <workItem from="1674386968585" duration="11360000" />
+      <workItem from="1674386968585" duration="16748000" />
     </task>
     <task id="LOCAL-00001" summary="enemy">
       <created>1673354933753</created>
@@ -139,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673880073370</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add player">
+      <created>1674420753846</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674420753846</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemy" />
+    <MESSAGE value="add player" />
+    <option name="LAST_COMMIT_MESSAGE" value="add player" />
   </component>
 </project>
